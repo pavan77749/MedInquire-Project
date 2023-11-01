@@ -7,6 +7,7 @@ import {BsArrowRight} from 'react-icons/bs'
 import About from "../components/About/About"
 import ServiceList from "../components/Services/Services"
 import featureImg from '../assets/images/feature-img.png'
+import DoctorList from "../components/Doctor/DoctorList"
 
 const Home = () => {
   return <>
@@ -168,6 +169,20 @@ const Home = () => {
 
   {/* our great doctors starts*/}
 
+  <section>
+    <div className="container">
+ 
+      <div className="xl:w-[470px] mx-auto">
+        <h2 className="heading text-center">Our Medical Services</h2>
+        <p className="text_para text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, nemo. Quisquam odit, harum at deserunt esse quasi voluptatem dolor doloribus.
+        </p>
+      </div>
+
+      <DoctorList/>
+      </div>
+    
+  </section>
   {/* our great doctors ends */}
 
 
