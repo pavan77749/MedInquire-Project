@@ -48,12 +48,12 @@ const Header = () => {
 
   const toggleMenu = () => menuRef.current.classList.toggle('show_menu')
 
-  return <header className='header flex items-center' ref={headerRef}>
+  return <header className='header flex items-center shadow-lg'  ref={headerRef}>
     <div className="container">
       <div className="flex items-center justify-between">
       {/* logo */}
       <div>
-        <img src={logo} alt="img not found" className="w-32"/>
+        <img src={logo} alt="img not found" className="w-28"/>
       </div>
 
     {/* menu */}
