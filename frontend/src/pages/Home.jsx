@@ -5,11 +5,13 @@ import icon03 from '../assets/images/icon03.png'
 import { Link } from "react-router-dom"
 import {BsArrowRight} from 'react-icons/bs'
 import About from "../components/About/About"
+import ServiceList from "../components/Services/Services"
+import featureImg from '../assets/images/feature-img.png'
 
 const Home = () => {
   return <>
   {/* hero section */}
-  <section className=' pt-[60px] 2xl:h-[800px]'>
+  <section className='  2xl:h-[800px]'>
     <div className="container">
       <div className="flex flex-col lg:flex-row items-center justify-between">
 
@@ -50,7 +52,7 @@ const Home = () => {
         {/* hero image */}
         <div className="flex gap-[30px] justify-end">
           <div>
-            <img  className="w-full" src={hero} alt="" />
+            <img  className="lg:w-[670px]" src={hero} alt="" />
           </div>
           
         </div>
@@ -112,6 +114,62 @@ const Home = () => {
   {/* About section start */}
   <About/>
   {/* About section ends */}
+
+  {/* Services Section start */}
+  <section>
+    <div className="container">
+      <div className="xl:w-[470px] mx-auto">
+        <h2 className="heading text-center">Our Medical Services</h2>
+        <p className="text_para text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, nemo. Quisquam odit, harum at deserunt esse quasi voluptatem dolor doloribus.
+        </p>
+      </div>
+
+
+      <ServiceList/>
+    </div>
+  </section>
+  {/* Services Section ends */}
+
+  {/* feature section */}
+  <section>
+    <div className="container">
+      <div className="flex items-center justify-between flex-col flex-col lg:flex-row py-10" >
+        {/* Feature Content */}
+        <div className="xl:w-[670px]">
+          <h2 className="heading">
+            Get virtual treatment <br /> anytime.
+          </h2>
+          <ul className="pl-4">
+            <li className="text_para">
+              1.Schedule the appointment directly.
+            </li>
+            <li className="text_para">
+              2.Search for your physician here, and contact their office.
+            </li>
+            <li className="text_para">
+              3.View our physicians who are accepting new patients, use the online scheduling tool to select an appointment time.
+            </li>
+          </ul>
+          <Link to="/">
+            <button className="btn">Learn More</button>
+          </Link>
+        </div>
+        {/* features image */}
+        <div className="relative z-10 xl:w-[770px] flex justify-end mt-[100px] lg:mt-0">
+          <img src={featureImg} alt="" />
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  {/* feature section ends */}
+
+  {/* our great doctors starts*/}
+
+  {/* our great doctors ends */}
+
 
   </>
 

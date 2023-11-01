@@ -48,7 +48,7 @@ const Header = () => {
 
   const toggleMenu = () => menuRef.current.classList.toggle('show_menu')
 
-  return <header className='header flex items-center shadow-lg'  ref={headerRef}>
+  return <header className='header flex items-center shadow-lg py-2'  ref={headerRef}>
     <div className="container">
       <div className="flex items-center justify-between">
       {/* logo */}
