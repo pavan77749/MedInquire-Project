@@ -7,7 +7,7 @@ const DoctorsCard = ({doctor}) => {
   return (
    <div className="p-3 lg:p-5">
     <div>
-        <img src={photo} alt="" className="w-full" />
+        <img src={photo} alt="" className="w-full rounded-sm" style={{width:330,height:330, }} />
     </div>
     <h2 className="text-[10px] leading-[30px] lg:text-[26px] lg:leading-9 text-headingColor font-[700] mt-3 lg:mt-5" >{name}</h2>
     <div className="mt-2 lg:mt-4 flex items-center justify-between">

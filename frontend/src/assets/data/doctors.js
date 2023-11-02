@@ -1,6 +1,6 @@
-import doctorImg01 from "../images/doctor-img01.png";
-import doctorImg02 from "../images/doctor-img02.png";
-import doctorImg03 from "../images/doctor-img03.png";
+import doctorImg01 from "../images/doctor-img01.jpg";
+import doctorImg02 from "../images/doctor-img02.jpg";
+import doctorImg03 from "../images/doctor-img03.jpg";
 
 export const doctors = [
   {
@@ -25,7 +25,7 @@ export const doctors = [
   },
   {
     id: "03",
-    name: "Dr. Vinod Pandey",
+    name: "Dr. Neha Pandey",
     specialization: "Dermatologist",
     avgRating: 4.8,
     totalRating: 130,
