@@ -2,12 +2,15 @@ import hero from "../assets/images/hero.png"
 import icon01 from '../assets/images/icon01.png'
 import icon02 from '../assets/images/icon02.png'
 import icon03 from '../assets/images/icon03.png'
+import faqimg from '../assets/images/faq-img.png'
 import { Link } from "react-router-dom"
 import {BsArrowRight} from 'react-icons/bs'
 import About from "../components/About/About"
 import ServiceList from "../components/Services/Services"
 import featureImg from '../assets/images/feature-img.png'
 import DoctorList from "../components/Doctor/DoctorList"
+import FaqItem from "../components/faq/FaqItem"
+import FaqList from "../components/faq/FaqList"
 
 const Home = () => {
   return <>
@@ -76,10 +79,10 @@ const Home = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px]">
       <div className="py-[30px] px-5">
-        <div className="flex items-center justify-center"><img src={icon01} alt="" /></div>
+        <div className="flex items-center justify-center "><img src={icon01} alt="" style={{width:168,height:150}} /></div>
       <div className="mt-[30px]">
-        <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center">Find Doctor</h2>
-        <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center"> World-class care for everyone. Our health System offers unmatched, expert health care. From the lab to the clinic </p>
+        <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center">Primary Care</h2>
+        <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center"> Primary care services are your first line of defense for maintaining your health. Our primary care providers offer general check-ups, vaccinations, and can help with common illnesses and minor injuries.</p>
         <Link to='/doctors ' className='w-[44px] h-[44px] rounded-full border border-solid border-[#181A1e] mt-[30px] mx-auto flex items-center justify-center group hover:bg-[#47c536] hover:border-none'>
           <BsArrowRight className="group-hover:text-white w-6 h-5"/>
 
@@ -87,10 +90,11 @@ const Home = () => {
       </div>
       </div>
       <div className="py-[30px] px-5">
-        <div className="flex items-center justify-center"><img src={icon02} alt="" /></div>
+        <div className="flex items-center justify-center"><img src={icon02} alt=""  style={{width:180,height:150}} /></div>
       <div className="mt-[30px]">
-        <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center">Find a Location</h2>
-        <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center"> World-class care for everyone. Our health System offers unmatched, expert health care. From the lab to the clinic </p>
+        <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center">Doctor Ratings and Reviews
+</h2>
+        <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">Patient feedback and ratings for doctors to help you make informed decisions about your choice of healthcare provider</p>
         <Link to='/doctors ' className='w-[44px] h-[44px] rounded-full border border-solid border-[#181A1e] mt-[30px] mx-auto flex items-center justify-center group hover:bg-[#47c536] hover:border-none'>
           <BsArrowRight className="group-hover:text-white w-6 h-5"/>
 
@@ -98,10 +102,10 @@ const Home = () => {
       </div>
       </div>
       <div className="py-[30px] px-5">
-        <div className="flex items-center justify-center"><img src={icon03} alt="" /></div>
+        <div className="flex items-center justify-center"><img src={icon03} alt=""  style={{width:200,height:150}} /></div>
       <div className="mt-[30px]">
         <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center">Book  Appointment</h2>
-        <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center"> World-class care for everyone. Our health System offers unmatched, expert health care. From the lab to the clinic </p>
+        <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center"> To book an appointment for any of these services, simply click the "Book Now" button, choose your preferred date and time, and confirm your appointment. </p>
         <Link to='/doctors ' className='w-[44px] h-[44px] rounded-full border border-solid border-[#181A1e] mt-[30px] mx-auto flex items-center justify-center group hover:bg-[#47c536] hover:border-none'>
           <BsArrowRight className="group-hover:text-white w-6 h-5"/>
 
@@ -118,12 +122,10 @@ const Home = () => {
 
   {/* Services Section start */}
   <section>
-    <div className="container">
+    <div className="container py-14">
       <div className="xl:w-[470px] mx-auto">
-        <h2 className="heading text-center">Our Medical Services</h2>
-        <p className="text_para text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, nemo. Quisquam odit, harum at deserunt esse quasi voluptatem dolor doloribus.
-        </p>
+        <h2 className="heading text-center">Reasons to Choose Us</h2>
+   
       </div>
 
 
@@ -139,7 +141,7 @@ const Home = () => {
         {/* Feature Content */}
         <div className="xl:w-[670px]">
           <h2 className="heading">
-            Get virtual treatment <br /> anytime.
+           Book an Appointment <br /> anytime.
           </h2>
           <ul className="pl-4">
             <li className="text_para">
@@ -158,7 +160,7 @@ const Home = () => {
         </div>
         {/* features image */}
         <div className="relative z-10 xl:w-[770px] flex justify-end mt-[100px] lg:mt-0">
-          <img src={featureImg} alt="" />
+          <img src={featureImg} alt=""   style={{width:470,height:470}} />
         </div>
 
       </div>
@@ -173,10 +175,8 @@ const Home = () => {
     <div className="container">
  
       <div className="xl:w-[470px] mx-auto">
-        <h2 className="heading text-center">Our Medical Services</h2>
-        <p className="text_para text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, nemo. Quisquam odit, harum at deserunt esse quasi voluptatem dolor doloribus.
-        </p>
+        <h2 className="heading text-center">Our Doctors</h2>
+       
       </div>
 
       <DoctorList/>
@@ -184,6 +184,20 @@ const Home = () => {
     
   </section>
   {/* our great doctors ends */}
+
+  {/* faq section start */}
+  <section>
+    <div className="container py-16">
+      <div className="flex justify-between gap-[50px] lg:gap-0">
+        <div className="w-1/2 hidden md:block"><img src={faqimg} alt="" /></div>
+      <div className="w-full md:w-1/2">
+        <h2 className="heading">Most questions by our beloved Patients</h2>
+        <FaqList/>
+      </div>
+      </div>
+    </div>
+  </section>
+  {/* faq section ends */}
 
 
   </>

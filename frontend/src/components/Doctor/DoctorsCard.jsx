@@ -11,7 +11,7 @@ const DoctorsCard = ({doctor}) => {
     </div>
     <h2 className="text-[10px] leading-[30px] lg:text-[26px] lg:leading-9 text-headingColor font-[700] mt-3 lg:mt-5" >{name}</h2>
     <div className="mt-2 lg:mt-4 flex items-center justify-between">
-        <span className='bg-[#ccf3ce] text-irisBlueColor py-1 px-2 lg:py-2 lg:px-6 text-[12px] leading-4 lg:text[16px] lg:leading-7 rounded font-semibold'>{specialization}</span>
+        <span className='bg-[#47c536] text-[white] py-1 px-2 lg:py-2 lg:px-6 text-[12px] leading-4 lg:text[16px] lg:leading-7 rounded font-semibold'>{specialization}</span>
         <div className="flex items-center gap-[6px]">
             <span className='flex items-center gap-[6px] text-[14px] leading-4 lg:text-[16px] lg:leading-7 font-semibold text-headingColor'><img src={starIcon}/></span>
             <span className='flex items-center gap-[6px] text-[14px] leading-4 lg:text-[16px] lg:leading-7 font-semibold text-textColor'>({totalRating})</span>

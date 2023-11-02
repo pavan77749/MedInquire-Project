@@ -1,27 +1,33 @@
 export const faqs = [
   {
-    question: "What is your medical care?",
+    question: "What is MedInquire?",
     content:
-      "One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.",
+      "MedInquire is an online platform that allows users to easily schedule medical appointments with healthcare providers, including doctors, specialists, and clinics. We aim to streamline the booking process and make healthcare accessible to everyone.",
   },
   {
-    question: "What happens if I need to go a hospital?",
+    question: "How do I use MedInquire to book an appointment?",
     content:
-      "One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.",
+      `Booking an appointment on MedInquire is simple:
+
+      Visit the MedInquire website.
+      Search for a healthcare provider or specialist.
+      Select a convenient date and time from the available options.
+      Complete the booking process, including providing your contact and insurance information (if applicable).
+      `,
   },
   {
-    question: "What happens if I need to go a hospital?",
+    question: " Can I book appointments for someone else, such as a family member or friend?",
     content:
-      "One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.",
+      "Yes, you can book appointments for others using your MedInquire account. Simply enter their information during the booking process.",
   },
   {
-    question: "Can I visit your medical office?",
+    question: "Is my personal information secure on MedInquire?",
     content:
-      "One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.",
+      "MedInquire takes your privacy seriously. We use advanced security measures to protect your data. Please refer to our Privacy Policy for more information on how we handle your personal information.",
   },
   {
-    question: "Does you provide urgent care?",
+    question: " How can I contact MedInquire for support or inquiries?",
     content:
-      "One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.",
+      `You can reach our customer support team through the "Contact Us" page on the MedInquire website. We're here to assist with any questions, concerns, or technical issues you may encounter.`,
   },
 ];
