@@ -4,23 +4,27 @@
 
 @layer components{
     .container{
-        @apply max-w-full w-[1440px] px-5 py-3 mx-auto
+        @apply max-w-full w-[1440px] px-5 py-3 mx-auto;
     }
     .btn{
         @apply bg-[#2fb71c] py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[38px]
-    }
+;    }
     .heading{
-        @apply text-[44px] leading-[54px] font-[900] text-[#181a1e] mt-[18px]
+        @apply text-[44px] leading-[54px] font-[900] text-[#181a1e] mt-[18px];
     }
     .text_para{
-        @apply text-[18px] leading-[30px] font-[400] text-textColor mt-[18px]
+        @apply text-[18px] leading-[30px] font-[400] text-textColor mt-[18px];
     }
     .header{
         @apply bg-[#fff] 
     }
-    /* .hero_section{
-        @apply bg-[url('./assets/images/hero-bg.png')] bg-no-repeat bg-center bg-cover;
-    } */
+    .form_label{
+        @apply text-textColor font-semibold text-[16px] mb-2;
+
+    }
+    .form_input{
+        @apply w-full px-4 py-3 border border-solid border-[#0066ff61] focus:outline-none focus:border-[#47c536] text-[16px] leading-7 text-headingColor placeholder:text-textColor cursor-pointer rounded-md mb-5;
+    }
 }
 
 @media only screen and (max-width:1024px){
